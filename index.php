@@ -15,7 +15,7 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<img src="images/logo.png">
+				<a href="#"><img src="images/logo.png"></a>
 			</div>
 			<nav>
 				<ul>
@@ -49,14 +49,14 @@
 		<div class="slider">
 			<div class="container">
 				<div class="slide-bank">
-					<img src="http://jeannemaureens.com/wp-content/uploads/2014/05/beautiful-hair2.jpg">
-					<img src="http://www.yourbeauty411.com/wp-content/uploads/2010/09/Beach_wave_hair.jpg">
-					<img src="http://www.sparqvault.com/wp-content/uploads/2012/08/vanessa-hudgens-beach-hair.jpg">
-				</div>
-				<div class="content-bank">
-					<div>
-						<img src="images/health-cross.png">
-						<h2>Improve volume, managability & overall health.</h2>
+					<div class="slide">
+						<img src="images/FirstSlide.jpg" title="<p>Water is good for you. Your hair needs it too!</p>">
+					</div>
+					<div class="slide">
+						<img src="images/SecondSlide.jpg" title="<p class='left'>Harsh chemicals are not good for you! Why would they be good for your hair?</p>">
+					</div>
+					<div class="slide">
+						<img src="images/Healthilocks_slide1.jpg" title="<p class='left'>15 minute treatment to have gorgeous hair for 12 weeks? It's true!</p>">
 					</div>
 				</div>
 			</div>
@@ -142,7 +142,7 @@
 								</div>
 								<div class="container large">
 									<div class="wrap">
-										<img src="images/section-image.png">
+										<img src="images/section-image.jpg">
 										<div class="container">
 											<div class="text-sect">
 												<img id="droplet" src="images/droplet.png">

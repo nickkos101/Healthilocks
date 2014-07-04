@@ -53,8 +53,10 @@ $('.slide-bank').nivoSlider({
     prevText: 'Prev',               // Prev directionNav text
     nextText: 'Next',               // Next directionNav text
     randomStart: false,             // Start on a random slide
-    beforeChange: function(){},     // Triggers before a slide transition
-    afterChange: function(){},      // Triggers after a slide transition
+    beforeChange: function(){
+    },     // Triggers before a slide transition
+    afterChange: function(){
+    },      // Triggers after a slide transition
     slideshowEnd: function(){},     // Triggers after all slides have been shown
     lastSlide: function(){},        // Triggers when last slide is shown
     afterLoad: function(){}         // Triggers when slider has loaded
