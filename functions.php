@@ -72,6 +72,9 @@ if ( ! function_exists( 'twentyten_setup' ) ):
  *
  * @since Twenty Ten 1.0
  */
+
+include 'autocracy/autocracy.php';
+
 function twentyten_setup() {
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
@@ -592,3 +595,31 @@ function nav_menu_first_last( $items ) {
  return $items;
 }
 add_filter('widget_text', 'do_shortcode');
+
+//Custom Post Types
+function healthilocks_create_post_type() {
+	register_post_type('products', array(
+		'labels' => array(
+			'name' => __('Products'),
+			'singular_name' => __('product')
+			),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'products'),
+		'supports' => array('title','editor','thumbnail', 'author', 'comments'),
+		'taxonomies' => array('category'), 
+		)
+	);
+	register_post_type('slides', array(
+		'labels' => array(
+			'name' => __('Slides'),
+			'singular_name' => __('slide')
+			),
+		'public' => true,
+		'has_archive' => true,
+		'rewrite' => array('slug' => 'slides'),
+		'supports' => array('title','editor','thumbnail', 'author'),
+		)
+	);
+}
+add_action('init', 'healthilocks_create_post_type');
